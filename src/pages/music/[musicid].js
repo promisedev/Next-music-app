@@ -56,13 +56,26 @@ const Music = ({ data }) => {
 
 export default Music;
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths(){
+await database.connect();
+  const result = await musicSchema.find({ },{_id:1})
+  const ids = result.map(database.convert)
+await database.disconnect();
+  return{
+    feedbacks:false,
+    paths:ids.map((id)=>({params:{musicid:id._id.toString()}}))
+  }
+}
+
+
+
+export async function getStaticProps(context) {
   console.log(context);
   const { params } = context;
   const id = params.musicid;
   await database.connect();
   const result = await musicSchema.findOne({ _id:id }).lean();
-
+await database.disconnect();
   return {
     props: {
       data: {
@@ -71,6 +84,6 @@ export async function getServerSideProps(context) {
         createdAt: result.createdAt.toString(),
         updatedAt: result.updatedAt.toString(),
       },
-    },
+    },revalidate:1
   };
 }
