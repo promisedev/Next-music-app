@@ -16,7 +16,7 @@ const Addplays = async (req, res) => {
     { useFindAndModify: false }
   );
 
-  await database.disconnect();
+  //await database.disconnect();
   res.status(201).json("Updated");
 };
 

@@ -58,9 +58,9 @@ export default Music;
 
 export async function getStaticPaths(){
 await database.connect();
-  const result = await musicSchema.find({ },{_id:1})
+  const result = await musicSchema.find().lean()
   const ids = result.map(database.convert)
-await database.disconnect();
+//await database.disconnect();
   return{
     feedbacks:false,
     paths:ids.map((id)=>({params:{musicid:id._id.toString()}}))
@@ -75,7 +75,7 @@ export async function getStaticProps(context) {
   const id = params.musicid;
   await database.connect();
   const result = await musicSchema.findOne({ _id:id }).lean();
-await database.disconnect();
+//await database.disconnect();
   return {
     props: {
       data: {

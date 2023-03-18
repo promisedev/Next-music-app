@@ -7,7 +7,7 @@ const Upload = async (req, res) => {
   await database.connect();
   try {
     await musicSchema.create(body);
-    await database.disconnect();
+    //await database.disconnect();
 
     res.status(201).json("Music uploaded successfully");
   } catch (error) {

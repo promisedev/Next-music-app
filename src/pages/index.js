@@ -35,7 +35,7 @@ import Seo from '@/components/seo'
 export  async function getStaticProps() {
 await database.connect()
 const music = await musicSchema.find().lean();
-await database.disconnect()
+//await database.disconnect()
 return{
   props:{music:music.map(database.convert)}
 }

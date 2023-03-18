@@ -15,7 +15,7 @@ let num = Number(likes) + 1
 
 const response =  await musicSchema.findByIdAndUpdate(_id,{likes:num},{useFindAndModify:false})
 
-await database.disconnect()
+//await database.disconnect()
 res.status(201).json("Updated")
 
 }

@@ -19,7 +19,7 @@ return
 res.status(200).json(second_result) 
 return
 }
-await database.disconnect();
+//await database.disconnect();
 res.status(200).json(first_result)   
 } catch (error) {
     res.status(404).json({error})

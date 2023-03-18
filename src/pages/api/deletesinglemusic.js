@@ -8,7 +8,7 @@ const Request = async (req, res) => {
 
     const data = await musicSchema.findByIdAndDelete({ _id: id });
     const result = await musicSchema.find();
-    await database.disconnect();
+    //await database.disconnect();
 
     res.status(200).json({ msg: "music successfully deleted",result});
   } catch (error) {
