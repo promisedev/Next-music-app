@@ -22,7 +22,7 @@ const Terms = () => {
           </ol>
           {/* ---------------------- */}
 
-          <p> Hello, and welcome to Prophegos's Cookie Policy (&quot;Policy&quot;).</p>
+          <p> Hello, and welcome to Prophegos&apos;s Cookie Policy (&quot;Policy&quot;).</p>
           <p>
             {" "}
             The objective of this Policy is to provide you, as a user of
