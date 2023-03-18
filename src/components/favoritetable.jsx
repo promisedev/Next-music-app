@@ -31,7 +31,7 @@ const Table = ({props}) => {
       <tbody>
         {playlists.map((play, index) => {
           return (
-            <tr>
+            <tr key={index}>
               <td>{index + 1}</td>
               <td className={Styles.playlist_td_title}>
                 <Link

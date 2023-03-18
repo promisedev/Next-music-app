@@ -14,10 +14,10 @@ clearInterval()
 changeBg()
 
     return(<article className={Styles.music_container}>
-{data.map((item)=>{
+{data.map((item,index)=>{
 
     return (
-      <div className={Styles.music_item}>
+      <div className={Styles.music_item} key={index}>
         <div
           className={Styles.music_art}
           style={{

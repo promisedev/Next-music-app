@@ -38,7 +38,7 @@ btn.classList.remove(`${Styles.show_btn}`)}
               {playlists.map((play,index)=>{
 
                 return (
-                  <tr>
+                  <tr key={index}>
                     <td>{index + 1}</td>
                     <td className={Styles.playlist_td_title}>
                       <Link
