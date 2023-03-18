@@ -13,7 +13,7 @@ const Privacy = () => {
     <p>Effective as of 12 December 2022</p>
 <ul>
 <li> About this Policy</li>
-<p>This Privacy Policy describes how we process your personal data at Spotify AB. From now on, we'll call it the 'Policy'.</p>
+<p>This Privacy Policy describes how we process your personal data at Spotify AB. From now on, we&apos;ll call it the &apos;Policy&apos;.</p>
 
 <p>It applies to your use of:</p>
 

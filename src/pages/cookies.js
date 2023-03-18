@@ -22,7 +22,7 @@ const Terms = () => {
           </ol>
           {/* ---------------------- */}
 
-          <p> Hello, and welcome to Prophegos's Cookie Policy ("Policy").</p>
+          <p> Hello, and welcome to Prophegos's Cookie Policy (&quot;Policy&quot;).</p>
           <p>
             {" "}
             The objective of this Policy is to provide you, as a user of
@@ -72,7 +72,7 @@ const Terms = () => {
               at our request;</p> 
               <p> <strong>Third-party cookies</strong> - these are cookies that
               are set by a party other than that of the website you are
-              visiting. If you visit the Spotify website or use the Spotify
+              visiting. If you visit the Spotify website or use the Prophegos
               Service and another party sets a cookie through that website this
               would be a third-party cookie.</p>
             </decscription>
