@@ -26,7 +26,7 @@ const Terms = () => {
           <p>
             {" "}
             The objective of this Policy is to provide you, as a user of
-            Prophegos's services, with clear and accessible information about
+            Prophegos&apos;s services, with clear and accessible information about
             the cookies that Prophegos uses, the role they play in helping us
             provide the best possible user experience to you.
           </p>
@@ -35,7 +35,7 @@ const Terms = () => {
           <p>
             Cookies are text files which are downloaded to your device when you
             visit a website. They are useful because they allow a website to
-            recognise a user's device. Cookies are also use to You can find more
+            recognise a user&apos;s device. Cookies are also use to You can find more
             information about cookies at: <a href="www.allaboutcookies.org">www.allaboutcookies.org</a> or <a href="www.youronlinechoices.eu"> www.youronlinechoices.eu</a>.
           </p>
 
