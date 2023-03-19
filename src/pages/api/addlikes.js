@@ -5,7 +5,7 @@ import musicSchema from '@/models/musicSchema'
 
 
 const Addlike = async(req,res)=>{
-const {id} = req.body
+const {id} = await req.body
 await database.connect();
 const request = await musicSchema.findOne({_id:id}).exec()
 if(!request) return res.status(403).json("failed to update");

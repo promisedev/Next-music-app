@@ -2,7 +2,7 @@ import musicSchema from "@/models/musicSchema";
 import database from "@/utils/config";
 
 const Request = async (req, res) => {
-  const { id } = req.body;
+  const { id } = await req.body;
   try {
     await database.connect();
 

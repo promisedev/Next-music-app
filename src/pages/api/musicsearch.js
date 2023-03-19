@@ -3,7 +3,7 @@ import database from '@/utils/config'
 import musicSchema from '@/models/musicSchema'
 
 const Search = async(req,res)=>{
-const {query} = req.body;
+const {query} = await req.body;
 console.log(query)
 await database.connect();
 try {
