@@ -62,7 +62,7 @@ await database.connect();
   const ids = result.map(database.convert)
 //await database.disconnect();
   return{
-    feedbacks:false,
+    fallback:false,
     paths:ids.map((id)=>({params:{musicid:id._id.toString()}}))
   }
 }
